@@ -1,0 +1,22 @@
+{
+    "name": "linusrendahl/social-fontawesome",    
+    "type": "library",
+    "description": "PHP Class to generate social links with FontAwesome icons.",
+    "keywords": ["fontawesome", "social", "icons"],
+    "homepage": "http://liren.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Linus Rendahl",
+            "email": "linus.r@liren.se",
+            "homepage": "http://liren.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "LinusRendahl\\": "src/" }
+    }
+}

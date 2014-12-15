@@ -34,3 +34,14 @@ Above code will return:
 - Youtube
 - Tumblr
 - Vimeo
+
+##Methods
+####Add
+Add your URL to your social network with the add method. Use only if the social network is in the defaults listed above.
+´´´php
+->add('http://facebook.com/user')
+´´´
+Returns:
+´´´html
+<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook"></i>
+´´´

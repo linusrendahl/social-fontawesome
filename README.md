@@ -111,7 +111,9 @@ Add a custom class to the i element.
 ```
 Returns:
 ```html
-<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
+<a href="http://facebook.com/user" title="Facebook">
+	<i class="fa fa-facebook foobar"></i>
+</a>
 ```
 
 ####setClass
@@ -121,7 +123,9 @@ Add a custom class to the i element.
 ```
 Returns:
 ```html
-<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
+<a href="http://facebook.com/user" title="Facebook">
+	<i class="fa fa-facebook foobar"></i>
+</a>
 ```
 
 ####getHtml

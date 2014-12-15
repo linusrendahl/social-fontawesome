@@ -144,7 +144,6 @@ Returns:
 	<a href="http://twitter.com" title="My Twitter Page!"><i class="fa fa-twitter"></i></a>
 	<a href="http://instagram.com" title="Cool pictures!"><i class="fa fa-facebook foobar"></i></a>
 </div>
-
-```php
+```
 
 

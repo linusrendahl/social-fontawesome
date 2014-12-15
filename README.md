@@ -146,4 +146,7 @@ Returns:
 </div>
 ```
 
+##History
+####v1.0
+- First release.
 

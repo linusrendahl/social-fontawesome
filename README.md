@@ -3,22 +3,34 @@ social-fontawesome
 
 PHP Class to generate social links with FontAwesome icons.
 
-##Basic Usage
+##Basic usage
 
 ```php
+//create the object
 $icons = new LinusRendahl\SocialFontAwesome;
+
+//add some icons with the add method
 $icons
-	->add('http://www.facebook.com/liren')->title('Welcome to my Facebook Page!')
-	->add('http://twitter.com/liren')
-	->add('http://instagram.se')
-	->add('http://github.com')->title('something else')
-	->add('http://linkedin.com')
-	->add('http://youtube.com')
-	->add('http://tumblr.com')
-	->add('http://vimeo.com')->setClass('whatever')
-	->addCustom('http://www.google.com', 'fa fa-google', 'Google');
+	->add('http://www.facebook.com')
+	->add('http://twitter.com')
+	->add('http://instagram.com');
 
-$icons->wrapper('<div class="wrapper">', '</div>');
-
+//get the html
 $html = $icons->getHtml();
 ```
+Above code will return:
+```¨html
+<a href="http://www.facebook.com"title="Facebook"><i class="fa fa-facebook"></i></a>
+<a href="http://twitter.com"title="Twitter"><i class="fa fa-twitter"></i></a>
+<a href="http://instagram.com"title="Instagram"><i class="fa fa-instagram"></i></a>
+```
+
+##Icons & Social Networks supported by default
+- Facebook
+- Twitter
+- Instagram
+- GitHub
+- LinkedIn
+- Youtube
+- Tumblr
+- Vimeo

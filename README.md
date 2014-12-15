@@ -6,6 +6,14 @@ PHP Class to generate social links with FontAwesome icons.
 ##Note
 This module does not add FontAwesome to your project. This will have to be added by yourself.
 
+##Installation
+Either download or use composer:
+```json
+"require": {
+        "linusrendahl/social-fontawesome": "1.*"
+}
+```
+
 ##Basic usage
 Usage:
 ```php

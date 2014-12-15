@@ -31,9 +31,15 @@ $html = $icons->getHtml();
 ```
 Returns:
 ```html
-<a href="http://www.facebook.com"title="Facebook"><i class="fa fa-facebook"></i></a>
-<a href="http://twitter.com"title="Twitter"><i class="fa fa-twitter"></i></a>
-<a href="http://instagram.com"title="Instagram"><i class="fa fa-instagram"></i></a>
+<a href="http://www.facebook.com"title="Facebook">
+	<i class="fa fa-facebook"></i>
+</a>
+<a href="http://twitter.com"title="Twitter">
+	<i class="fa fa-twitter"></i>
+</a>
+<a href="http://instagram.com"title="Instagram">
+	<i class="fa fa-instagram"></i>
+</a>
 ```
 
 ##Icons & Social Networks supported by default
@@ -54,7 +60,9 @@ Add your URL to your social network with the add method. Use only if the social 
 ```
 Returns:
 ```html
-<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook"></i></a>
+<a href="http://facebook.com/user" title="Facebook">
+	<i class="fa fa-facebook"></i>
+</a>
 ```
 
 ####addCustom
@@ -65,7 +73,9 @@ If your link is not in the supported defaults, use this method to create your ow
 ```
 Returns:
 ```html
-<a href="http://some-other-network.com/user" title="My title!"><i class="fa fa-some-icon"></i></a>
+<a href="http://some-other-network.com/user" title="My title!">
+	<i class="fa fa-some-icon"></i>
+</a>
 ```
 
 ####title
@@ -75,7 +85,9 @@ Change the title for the default icons using this method.
 ```
 Returns:
 ```html
-<a href="http://facebook.com/user" title="Welcome to my Facebook page!"><i class="fa fa-facebook"></i></a>
+<a href="http://facebook.com/user" title="Welcome to my Facebook page!">
+	<i class="fa fa-facebook"></i>
+</a>
 ```
 
 ####wrapper
@@ -85,8 +97,10 @@ Add a HTML element to wrap around your icons.
 ```
 Returns:
 ```html
-<div class="wrapper"
-	<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook"></i></a>
+<div class="wrapper">
+	<a href="http://facebook.com/user" title="Facebook">
+		<i class="fa fa-facebook"></i>
+	</a>
 </div>
 ```
 
@@ -97,9 +111,7 @@ Add a custom class to the i element.
 ```
 Returns:
 ```html
-<div class="wrapper"
-	<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
-</div>
+<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
 ```
 
 ####setClass
@@ -109,9 +121,7 @@ Add a custom class to the i element.
 ```
 Returns:
 ```html
-<div class="wrapper"
-	<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
-</div>
+<a href="http://facebook.com/user" title="Facebook"><i class="fa fa-facebook foobar"></i></a>
 ```
 
 ####getHtml
@@ -148,13 +158,22 @@ echo $html;
 Returns:
 ```html
 <div class="wrapper">
-	<a href="http://www.facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
-	<a href="http://twitter.com" title="My Twitter Page!"><i class="fa fa-twitter"></i></a>
-	<a href="http://instagram.com" title="Cool pictures!"><i class="fa fa-facebook foobar"></i></a>
+	<a href="http://www.facebook.com" title="Facebook">
+		<i class="fa fa-facebook"></i>
+	</a>
+	<a href="http://twitter.com" title="My Twitter Page!">
+		<i class="fa fa-twitter"></i>
+	</a>
+	<a href="http://instagram.com" title="Cool pictures!">
+		<i class="fa fa-facebook foobar"></i>
+	</a>
 </div>
 ```
 
 ##History
+####v1.0.2
+- Added as a composer package at Packagist.
+
 ####v1.0
 - First release.
 

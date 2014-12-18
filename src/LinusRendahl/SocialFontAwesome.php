@@ -9,17 +9,17 @@ class SocialFontAwesome
 {
 
 	//array of social icons
-	protected $icons = array();
+	public $icons = array();
 
 	//html to be returned
-	protected $html;
+	public $html;
 
 	//default icons
-	protected $default = array();
+	public $default = array();
 
 	//wrapper element for icons (default is none)
-	protected $wrapper_start;
-	protected $wrapper_end;
+	public $wrapper_start;
+	public $wrapper_end;
 	
 	/**
 	 * Set default social icons
@@ -182,7 +182,7 @@ class SocialFontAwesome
 	* @param string $url
 	* @return string $domain
 	*/
-	protected function getDomain($url)
+	public function getDomain($url)
 	{
 		$domain = parse_url($url, PHP_URL_HOST); 	//Get host from URL.
 		$domain = str_replace('www.', '', $domain);	//Remove www. if set.

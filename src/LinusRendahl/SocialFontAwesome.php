@@ -66,7 +66,7 @@ class SocialFontAwesome
 	/**
 	 * Adds a URL to social network
 	 * @param string url
-	 * @return object $this
+	 * @return SocialFontAwesome $this
 	 */
 	public function add($url)
 	{
@@ -88,7 +88,7 @@ class SocialFontAwesome
 	/**
 	 * Add a custom icon that doesn't exist in the defaults
 	 * @param string url
-	 * @return object $this
+	 * @return SocialFontAwesome $this
 	 */
 	public function addCustom($url, $class, $title=null)
 	{
@@ -108,7 +108,7 @@ class SocialFontAwesome
 	/**
 	 * Set a custom title for a icon
 	 * @param string $title
-	 * @return object $this
+	 * @return SocialFontAwesome $this
 	 */
 	public function title($title = null)
 	{
@@ -123,7 +123,7 @@ class SocialFontAwesome
 	 * Set a HTML element as a wrapper for the icons
 	 * @param string $start element
 	 * @param string $end element
-	 * @return object $this
+	 * @return SocialFontAwesome $this
 	 */
 	public function wrapper($start = null, $end = null)
 	{
@@ -136,7 +136,7 @@ class SocialFontAwesome
 	/**
 	 * Set a custom class for a icon
 	 * @param string $class
-	 * @return object $this
+	 * @return SocialFontAwesome $this
 	 */
 	public function setClass($class = null)
 	{

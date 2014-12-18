@@ -4,6 +4,8 @@ social-fontawesome
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/?branch=master)
 
+[![Code Coverage](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/?branch=master)
+
 [![Build Status](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/badges/build.png?b=master)](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/build-status/master)
 
 PHP Class to generate social links with FontAwesome icons.

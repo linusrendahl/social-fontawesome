@@ -2,6 +2,10 @@ social-fontawesome
 ==================
 [![Build Status](https://travis-ci.org/linusrendahl/social-fontawesome.svg?branch=master)](https://travis-ci.org/linusrendahl/social-fontawesome)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/?branch=master)
+
+[![Build Status](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/badges/build.png?b=master)](https://scrutinizer-ci.com/g/linusrendahl/social-fontawesome/build-status/master)
+
 PHP Class to generate social links with FontAwesome icons.
 
 ##Note

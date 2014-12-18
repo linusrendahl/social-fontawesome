@@ -52,6 +52,36 @@ class SocialFontAwesomeTest extends \PHPUnit_Framework_TestCase
 	}
 
 
+	public function testConstructor()
+	{
+		$object = new \LinusRendahl\SocialFontAwesome;
+		
+		$res = gettype($object->default);
+		$exp = 'array';
+
+		$this->assertEquals($res, $exp, 'This is not a array.');
+
+		$res = count($object->default);
+		$exp = 0;
+
+		$this->assertNotEquals($res, $exp, 'This is not a array.');
+	}
+
+
+	public function testAutoloader()
+	{
+		include('/../../autoloader.php');
+
+		$object = new SocialFontAwesome;
+
+		$res = gettype($object);
+		$exp = 'string:object';
+
+		$this->assertNotEquals($res, $exp, 'A object could not be created from the autoloader.');
+
+	}
+
+
 
 	public function testAddFromDefault()
 	{
@@ -121,6 +151,28 @@ class SocialFontAwesomeTest extends \PHPUnit_Framework_TestCase
 
 		$this->assertEquals($res, $exp, 'Class do not match.');
 
+	}
+
+
+	public function testGetArray()
+	{
+		$this->object->add('http://www.facebook.com/user');
+
+		$res = gettype($this->object->getArray());
+		$exp = 'array';
+
+		$this->assertEquals($res, $exp, 'This is not an array.');
+	}
+
+	public function testGetHtml()
+	{
+		$html = $this->object->add('http://www.facebook.com/user');
+		$html = $html->getHtml();
+
+		$res = gettype($html);
+		$exp = 'string';
+
+		$this->assertEquals($res, $exp, 'This is not an string of HTML.');
 	}
 
 }

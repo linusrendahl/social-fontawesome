@@ -70,7 +70,7 @@ class SocialFontAwesomeTest extends \PHPUnit_Framework_TestCase
 
 	public function testAutoloader()
 	{
-		include('/../../autoloader.php');
+		include( __DIR__ . '/../../autoloader.php');
 
 		$object = new SocialFontAwesome;
 

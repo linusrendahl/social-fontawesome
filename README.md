@@ -1,5 +1,6 @@
 social-fontawesome
 ==================
+[![Build Status](https://travis-ci.org/linusrendahl/social-fontawesome.svg?branch=master)](https://travis-ci.org/linusrendahl/social-fontawesome)
 
 PHP Class to generate social links with FontAwesome icons.
 
